@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<?php
+		
+		class OOP{
+			protected $name;
+			protected $age;
+		
+			function getName()
+			{
+				return $this->name;
+			}
+			function getAge()
+			{
+				return $this->age;
+			}
+
+			function setName($name)
+			{
+				$this->name=$name;
+			}
+			function setAge($age)
+			{
+				$this->age=$age;
+			}
+		}
+
+            /*
+            Object Creation  set and get values
+            */
+			$ab = new OOP();
+			$ab->setName("Mohammed");
+			$ab->setAge(45);
+			echo("Name : ".$ab->getName()."<br>");
+			echo("Age : ".$ab->getAge()."<br>");
+		
+		?>
+		
+		
+	</body>
+</html>
